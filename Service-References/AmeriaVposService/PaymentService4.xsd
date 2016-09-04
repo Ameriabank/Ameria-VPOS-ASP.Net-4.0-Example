@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="payments.ameriabank.am/PaymentFieldsClass" elementFormDefault="qualified" targetNamespace="payments.ameriabank.am/PaymentFieldsClass" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="PaymentFields">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="approveamount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="authcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cardholderID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cardnumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clientname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="datetime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="depositamount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="descr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="merchantid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="opaque" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="orderid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="orderstatuscode" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="payment_state" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paymenttype" type="xs:int" />
+      <xs:element minOccurs="0" name="refundamount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="respcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rewardpoint" type="xs:decimal" />
+      <xs:element minOccurs="0" name="rrn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="stan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="terminalid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="trxnDetails" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentFields" nillable="true" type="tns:PaymentFields" />
+</xs:schema>

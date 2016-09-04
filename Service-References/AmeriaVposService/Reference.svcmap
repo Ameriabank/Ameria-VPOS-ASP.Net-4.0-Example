@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1b38c778-f9aa-4d73-ade0-fa712bfa47f4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://testpayments.ameriabank.am/webservice/PaymentService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PaymentService.xsd" MetadataType="Schema" ID="0466c1a3-0c0b-4773-9f08-b43f5f0fac04" SourceId="1" SourceUrl="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PaymentService1.xsd" MetadataType="Schema" ID="2704e3e2-0be7-4955-86e2-b1765b2514e9" SourceId="1" SourceUrl="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PaymentService.wsdl" MetadataType="Wsdl" ID="1e41a8e2-ace8-4876-8e73-0a853e902a2a" SourceId="1" SourceUrl="https://testpayments.ameriabank.am/webservice/PaymentService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="PaymentService2.xsd" MetadataType="Schema" ID="b0f97fcf-8296-4e3a-99ff-aa5b0119dd96" SourceId="1" SourceUrl="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PaymentService3.xsd" MetadataType="Schema" ID="d3a9f1db-d630-4375-89a2-55cfb2bda9e7" SourceId="1" SourceUrl="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd5" />
+    <MetadataFile FileName="PaymentService4.xsd" MetadataType="Schema" ID="d2d7f739-9189-480f-8067-b6c8500c1dae" SourceId="1" SourceUrl="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd4" />
+    <MetadataFile FileName="PaymentService.disco" MetadataType="Disco" ID="b411edcd-3a59-482c-be99-76c664e89521" SourceId="1" SourceUrl="https://testpayments.ameriabank.am/webservice/PaymentService.svc?disco" />
+    <MetadataFile FileName="PaymentService1.wsdl" MetadataType="Wsdl" ID="beda3c93-b0e1-41f0-bf10-928be9b76a56" SourceId="1" SourceUrl="https://testpayments.ameriabank.am/webservice/PaymentService.svc?wsdl" />
+    <MetadataFile FileName="PaymentService5.xsd" MetadataType="Schema" ID="f60e2c1b-c62b-4fc1-9c1e-4fef90c3fb70" SourceId="1" SourceUrl="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
