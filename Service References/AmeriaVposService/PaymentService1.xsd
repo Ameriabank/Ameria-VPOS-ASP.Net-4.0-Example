@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="payments.ameriabank.am/PaymentsClientClass" elementFormDefault="qualified" targetNamespace="payments.ameriabank.am/PaymentsClientClass" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="PaymentClientClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CardHolderID" nillable="true" type="xs:string" />
+      <xs:element name="ClientID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Opaque" nillable="true" type="xs:string" />
+      <xs:element name="OrderID" type="xs:int" />
+      <xs:element name="Password" nillable="true" type="xs:string" />
+      <xs:element name="PaymentAmount" type="xs:decimal" />
+      <xs:element name="Username" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="backURL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentClientClass" nillable="true" type="tns:PaymentClientClass" />
+</xs:schema>

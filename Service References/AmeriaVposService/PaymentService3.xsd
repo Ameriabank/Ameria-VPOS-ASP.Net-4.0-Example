@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="payments.ameriabank.am/RespMessage" elementFormDefault="qualified" targetNamespace="payments.ameriabank.am/RespMessage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="RespMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Opaque" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Respcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Respmessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespMessage" nillable="true" type="tns:RespMessage" />
+</xs:schema>

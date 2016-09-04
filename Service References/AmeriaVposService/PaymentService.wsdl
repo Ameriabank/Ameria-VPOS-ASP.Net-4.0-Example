@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://payments.ameriabank.am" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://payments.ameriabank.am" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://payments.ameriabank.am/Imports">
+      <xsd:import schemaLocation="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd0" namespace="http://payments.ameriabank.am" />
+      <xsd:import schemaLocation="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd2" namespace="payments.ameriabank.am/PaymentsClientClass" />
+      <xsd:import schemaLocation="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd3" namespace="payments.ameriabank.am/ResultPaymentClass" />
+      <xsd:import schemaLocation="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd4" namespace="payments.ameriabank.am/PaymentFieldsClass" />
+      <xsd:import schemaLocation="https://testpayments.ameriabank.am/webservice/PaymentService.svc?xsd=xsd5" namespace="payments.ameriabank.am/RespMessage" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAmeria_GetPaymentID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentID" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_GetPaymentID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_GetPaymentFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentFields" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_GetPaymentFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_ReversePayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReversePayment" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_ReversePayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReversePaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_Confirmation_InputMessage">
+    <wsdl:part name="parameters" element="tns:Confirmation" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_Confirmation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_Refund_InputMessage">
+    <wsdl:part name="parameters" element="tns:Refund" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_Refund_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefundResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_UpdateOpaque_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOpaque" />
+  </wsdl:message>
+  <wsdl:message name="IAmeria_UpdateOpaque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOpaqueResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAmeria">
+    <wsdl:operation name="GetPaymentID">
+      <wsdl:input wsaw:Action="http://payments.ameriabank.am/IAmeria/GetPaymentID" message="tns:IAmeria_GetPaymentID_InputMessage" />
+      <wsdl:output wsaw:Action="http://payments.ameriabank.am/IAmeria/GetPaymentIDResponse" message="tns:IAmeria_GetPaymentID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentFields">
+      <wsdl:input wsaw:Action="http://payments.ameriabank.am/IAmeria/GetPaymentFields" message="tns:IAmeria_GetPaymentFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://payments.ameriabank.am/IAmeria/GetPaymentFieldsResponse" message="tns:IAmeria_GetPaymentFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReversePayment">
+      <wsdl:input wsaw:Action="http://payments.ameriabank.am/IAmeria/ReversePayment" message="tns:IAmeria_ReversePayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://payments.ameriabank.am/IAmeria/ReversePaymentResponse" message="tns:IAmeria_ReversePayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Confirmation">
+      <wsdl:input wsaw:Action="http://payments.ameriabank.am/IAmeria/Confirmation" message="tns:IAmeria_Confirmation_InputMessage" />
+      <wsdl:output wsaw:Action="http://payments.ameriabank.am/IAmeria/ConfirmationResponse" message="tns:IAmeria_Confirmation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Refund">
+      <wsdl:input wsaw:Action="http://payments.ameriabank.am/IAmeria/Refund" message="tns:IAmeria_Refund_InputMessage" />
+      <wsdl:output wsaw:Action="http://payments.ameriabank.am/IAmeria/RefundResponse" message="tns:IAmeria_Refund_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOpaque">
+      <wsdl:input wsaw:Action="http://payments.ameriabank.am/IAmeria/UpdateOpaque" message="tns:IAmeria_UpdateOpaque_InputMessage" />
+      <wsdl:output wsaw:Action="http://payments.ameriabank.am/IAmeria/UpdateOpaqueResponse" message="tns:IAmeria_UpdateOpaque_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
